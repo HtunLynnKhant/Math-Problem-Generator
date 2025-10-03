@@ -5,7 +5,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai'
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 
-// Helper to get Gemini model
+// Gemini model
 function getModel() {
   const apiKey = process.env.GOOGLE_API_KEY
   if (!apiKey) {
@@ -31,7 +31,7 @@ Example JSON format:
     const result = await model.generateContent(prompt)
     const text = result.response.text().trim()
 
-    // Try to parse JSON in the model's response (strip code fences if present)
+    // parse JSON in the model's response
     const jsonText = text.replace(/^```json\n?|\n?```$/g, '').trim()
     let parsed: { problem_text: string; final_answer: number }
     try {

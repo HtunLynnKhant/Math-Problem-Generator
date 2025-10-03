@@ -75,13 +75,13 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {/* Floating geometric shapes */}
+        {/* geometric shapes */}
         <div className="absolute top-20 left-20 w-32 h-32 bg-gradient-to-br from-blue-400/20 to-purple-400/20 rounded-full animate-float blur-xl"></div>
         <div className="absolute top-60 right-32 w-24 h-24 bg-gradient-to-br from-pink-400/20 to-red-400/20 rounded-full animate-float blur-xl" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-40 left-1/4 w-40 h-40 bg-gradient-to-br from-indigo-400/20 to-cyan-400/20 rounded-full animate-float blur-xl" style={{animationDelay: '4s'}}></div>
         <div className="absolute bottom-20 right-20 w-28 h-28 bg-gradient-to-br from-emerald-400/20 to-teal-400/20 rounded-full animate-float blur-xl" style={{animationDelay: '1s'}}></div>
         
-        {/* Grid pattern overlay */}
+        {/* overlay */}
         <div className="absolute inset-0 opacity-30">
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -90,7 +90,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Navigation Header */}
+      {/* Navigation */}
       <nav className="glass-morphism-dark sticky top-0 z-50 border-b border-white/10">
         <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">

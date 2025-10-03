@@ -26,7 +26,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Custom animations */
+/* animations */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
@@ -204,14 +204,14 @@ html {
   100% { transform: rotate(360deg); }
 }
 
-/* Mobile-specific improvements */
+/* Mobile-specific */
 @media (max-width: 640px) {
-  /* Reduce animation intensity on mobile for better performance */
+  /* Reduce animation for on mobile */
   .animate-float {
     animation: float 8s ease-in-out infinite;
   }
   
-  /* Smaller shadows on mobile */
+  /* Smaller shadows for mobile */
   .card-hover:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
@@ -222,7 +222,7 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   }
   
-  /* Ensure text is readable on small screens */
+  /* text adjust for mobile */
   .glass-morphism {
     backdrop-filter: blur(15px);
   }
@@ -232,7 +232,7 @@ html {
   }
 }
 
-/* Touch-friendly focus states */
+/* Touch focus states */
 @media (hover: none) and (pointer: coarse) {
   .focus-ring:focus {
     outline: 2px solid rgba(99, 102, 241, 0.6);

@@ -17,7 +17,7 @@ export function getSupabase() {
   return supabaseInstance;
 }
 
-// For backward compatibility
+// For backward
 export const supabase = new Proxy({} as SupabaseClient, {
   get(target, prop) {
     return getSupabase()[prop as keyof SupabaseClient];
