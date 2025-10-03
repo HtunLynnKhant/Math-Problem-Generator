@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '../../../../lib/supabaseClient'
 import { GoogleGenerativeAI } from '@google/generative-ai'
 
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 function getModel() {
   const apiKey = process.env.GOOGLE_API_KEY
   if (!apiKey) throw new Error('Missing GOOGLE_API_KEY')
