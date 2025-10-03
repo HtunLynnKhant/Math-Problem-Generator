@@ -191,6 +191,18 @@ Make sure to configure your environment variables properly:
    - Get an API key from Google AI Studio
    - Enable the Generative AI API
 
+### Live Demo Credentials
+
+For testing and demonstration purposes, you can use the following Supabase credentials that are already configured in the project:
+
+**Supabase Configuration:**
+```
+NEXT_PUBLIC_SUPABASE_URL=https://tjnuuczqgpfarniuysiy.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRqbnV1Y3pxZ3BmYXJuaXV5c2l5Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTk0ODEwNTksImV4cCI6MjA3NTA1NzA1OX0.Jmj8Z-6hMarFfa5U1TExtqcI91qhNbIhtcjxk8FTDGY
+```
+
+**Note:** These credentials are provided for demo purposes. For production use, create your own Supabase project and update the credentials accordingly.
+
 ## Contributing
 
 1. Fork the repository
